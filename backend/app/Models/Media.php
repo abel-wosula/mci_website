@@ -5,12 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Status extends Model
+class Media extends Model
+
 {
     use HasFactory;
-    protected $table = 'status';
+    protected $table = 'media';
 
     protected $fillable = [
         'name',
+        'url',
     ];
 }
