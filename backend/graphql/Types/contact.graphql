@@ -1,0 +1,8 @@
+extend type Contact {
+  id: ID!
+  name: String!
+  email: String!
+  message: String!
+  createdAt: String!
+  updatedAt: String!
+}

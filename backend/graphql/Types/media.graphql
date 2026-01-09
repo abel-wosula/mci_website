@@ -1,0 +1,7 @@
+extend type Media {
+    id: ID!
+  url: String!
+  name: String!
+  createdAt: String!
+  updatedAt: String!
+}

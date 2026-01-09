@@ -1,0 +1,8 @@
+extend type Page {
+  id: ID!
+  title: String!
+  content: String!
+  slug: String!
+  is_published: Boolean!
+  status_id: ID!
+}

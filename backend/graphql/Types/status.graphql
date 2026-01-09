@@ -1,0 +1,6 @@
+extend type Status {
+  id: ID!
+  name: String!
+  description: String
+  isActive: Boolean!
+}

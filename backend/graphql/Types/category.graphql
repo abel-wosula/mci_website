@@ -1,0 +1,4 @@
+extend type Category {
+  id: ID!
+  name: String!
+}

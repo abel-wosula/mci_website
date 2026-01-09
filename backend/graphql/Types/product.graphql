@@ -1,0 +1,6 @@
+extend type Product {
+  id: ID!
+  name: String!
+  description: String!
+  category_id: ID!
+}
