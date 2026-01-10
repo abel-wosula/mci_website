@@ -4,3 +4,13 @@ type Product {
   description: String!
   category_id: ID!
 }
+input CreateProductInput {
+  name: String!
+  description: String!
+  category_id: ID!
+}
+type ProductMutationResponse {
+  product: Product
+  message: String!
+  errors: [String!]
+}
