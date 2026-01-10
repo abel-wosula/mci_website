@@ -6,3 +6,15 @@ type Page {
   is_published: Boolean!
   status_id: ID!
 }
+input CreatePageInput {
+  title: String!
+  content: String!
+  slug: String!
+  is_published: Boolean!
+  status_id: ID!
+}
+type PageMutationResponse {
+  page: Page
+  message: String!
+  errors: [String!]
+}

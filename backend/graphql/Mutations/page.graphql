@@ -1,0 +1,4 @@
+extend type Mutation {
+  createPage(input: CreatePageInput! @spread): PageMutationResponse!
+   @field(resolver: "App\\GraphQL\\Mutations\\CreatePageMutation@createPage")
+}
