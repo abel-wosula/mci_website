@@ -1,4 +1,4 @@
-extend type Product {
+type Product {
   id: ID!
   name: String!
   description: String!

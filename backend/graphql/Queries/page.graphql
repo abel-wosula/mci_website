@@ -1,0 +1,3 @@
+extend type Query {
+  pages: [Page!]! @paginate(defaultCount: 10)
+}

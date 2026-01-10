@@ -1,4 +1,4 @@
-extend type Page {
+type Page {
   id: ID!
   title: String!
   content: String!

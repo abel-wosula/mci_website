@@ -1,4 +1,4 @@
-extend type Contact {
+type Contact {
   id: ID!
   name: String!
   email: String!

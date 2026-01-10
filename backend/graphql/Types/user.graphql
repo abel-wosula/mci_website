@@ -1,7 +1,20 @@
 type User {
   id: ID!
-  username: String!
+  name: String!
   email: String!
+  password: String!
   createdAt: String!
   updatedAt: String!
+}
+
+input CreateUserInput {
+  name: String!
+  email: String!
+  password: String!
+}
+
+type UserMutationResponse {
+  user: User
+  message: String!
+  errors: [String!]
 }
