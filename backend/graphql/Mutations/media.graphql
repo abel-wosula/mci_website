@@ -1,0 +1,4 @@
+extend type Mutation {
+  createMedia(input: CreateMediaInput! @spread): MediaMutationResponse!
+   @field(resolver: "App\\GraphQL\\Mutations\\CreateMediaMutation@createMedia")
+}

@@ -5,3 +5,12 @@ type Media {
   createdAt: String!
   updatedAt: String!
 }
+input CreateMediaInput {
+  url: String!
+  name: String!
+}
+type MediaMutationResponse {
+  media: Media
+  message: String!
+  errors: [String!]
+}
