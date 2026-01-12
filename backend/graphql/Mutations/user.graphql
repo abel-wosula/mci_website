@@ -2,3 +2,11 @@ type Mutation {
   createUser(input: CreateUserInput! @spread): UserMutationResponse!
    @field(resolver: "App\\GraphQL\\Mutations\\CreateUserMutation@createUser")
 }
+
+type Mutation {
+  createUser(input: CreateUserInput!): UserMutationResponse
+  updateUser(
+    id: ID! @eq
+    input: UpdateUserInput!
+  ): UserMutationResponse
+}
