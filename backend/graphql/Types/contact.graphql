@@ -6,3 +6,13 @@ type Contact {
   createdAt: String!
   updatedAt: String!
 }
+input CreateContactInput {
+  name: String!
+  email: String!
+  message: String!
+}
+type ContactMutationResponse {
+  contact: Contact
+  message: String!
+  errors: [String!]
+}
