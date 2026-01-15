@@ -24,7 +24,7 @@ const dataProvider: Partial<DataProvider> = {
             first: params.pagination.perPage,
         };
 
-        const response = await client.request(query, variables);
+        const response = await client.request(query, variables as any);
 
         return {
             data: response.users.data,
@@ -69,7 +69,7 @@ const dataProvider: Partial<DataProvider> = {
 
         const response = await client.request(mutation, {
             input: params.data,
-        });
+        } as any);
 
         return {
             data: response.createUser.user,
@@ -92,10 +92,38 @@ const dataProvider: Partial<DataProvider> = {
         const response = await client.request(mutation, {
             id: params.id,
             input: params.data,
-        });
+        } as any);
 
         return {
             data: response.updateUser.user,
+        };
+    },
+
+    delete: async (_resource, params) => {
+        const mutation = gql`
+            mutation DeleteUser($input: DeleteUserInput!) {
+                deleteUser(input: $input) {
+                    message
+                    user {
+                        id
+                    }
+                    errors
+                }
+            }
+        `;
+
+        const response = await client.request(mutation, {
+            input: {
+                id: params.id,
+            },
+        } as any);
+
+        if (response.deleteUser.errors && response.deleteUser.errors.length) {
+            throw new Error(response.deleteUser.errors.join(", "));
+        }
+
+        return {
+            data: (params.previousData ?? { id: params.id }) as any,
         };
     },
 };

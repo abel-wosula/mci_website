@@ -20,6 +20,10 @@ input UpdateUserInput {
   password: String
 }
 
+input DeleteUserInput {
+  id: ID!
+}
+
 type UserMutationResponse {
   user: User
   message: String!

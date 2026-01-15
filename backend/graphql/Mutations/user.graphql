@@ -7,3 +7,8 @@ type Mutation {
   updateUser(input: UpdateUserInput! @spread): UserMutationResponse!
     @field(resolver: "App\\GraphQL\\Mutations\\UpdateUserMutation@updateUser")
 }
+
+type Mutation {
+  deleteUser(input: DeleteUserInput! @spread): UserMutationResponse!
+    @field(resolver: "App\\GraphQL\\Mutations\\DeleteUserMutation@deleteUser")
+}
