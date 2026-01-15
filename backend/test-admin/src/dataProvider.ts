@@ -78,8 +78,8 @@ const dataProvider: Partial<DataProvider> = {
 
     update: async (_resource, params) => {
         const mutation = gql`
-            mutation UpdateUser($id: ID!, $input: UpdateUserInput!) {
-                updateUser(id: $id, input: $input) {
+            mutation UpdateUser($input: UpdateUserInput!) {
+                updateUser(input: $input) {
                     user {
                         id
                         name

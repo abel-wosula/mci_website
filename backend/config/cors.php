@@ -1,10 +1,13 @@
 <?php
 return [
-'paths' => ['api/*', 'graphql'],
-'allowed_origins' => ['http://localhost:5173'],
-'allowed_methods' => ['*'],
-'allowed_headers' => ['*'],
-'exposed_headers' => [],
-'max_age' => 0,
-'supports_credentials' => false,
+    'paths' => ['api/*', 'graphql'],
+    'allowed_origins' => [
+        'http://localhost:5173',
+        'http://192.168.1.44:5173',
+    ],
+    'allowed_methods' => ['*'],
+    'allowed_headers' => ['*'],
+    'exposed_headers' => [],
+    'max_age' => 0,
+    'supports_credentials' => false,
 ];

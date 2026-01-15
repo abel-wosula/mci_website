@@ -4,9 +4,6 @@ type Mutation {
 }
 
 type Mutation {
-  createUser(input: CreateUserInput!): UserMutationResponse
-  updateUser(
-    id: ID! @eq
-    input: UpdateUserInput!
-  ): UserMutationResponse
+  updateUser(input: UpdateUserInput! @spread): UserMutationResponse!
+    @field(resolver: "App\\GraphQL\\Mutations\\UpdateUserMutation@updateUser")
 }
