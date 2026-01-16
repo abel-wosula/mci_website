@@ -1,14 +1,10 @@
 type Mutation {
   createUser(input: CreateUserInput! @spread): UserMutationResponse!
-   @field(resolver: "App\\GraphQL\\Mutations\\CreateUserMutation@createUser")
-}
+    @field(resolver: "App\\GraphQL\\Mutations\\CreateUserMutation@createUser")
 
-type Mutation {
   updateUser(input: UpdateUserInput! @spread): UserMutationResponse!
     @field(resolver: "App\\GraphQL\\Mutations\\UpdateUserMutation@updateUser")
-}
 
-type Mutation {
   deleteUser(input: DeleteUserInput! @spread): UserMutationResponse!
     @field(resolver: "App\\GraphQL\\Mutations\\DeleteUserMutation@deleteUser")
 }
