@@ -2,3 +2,11 @@ type Category {
   id: ID!
   name: String!
 }
+input CreateCategoryInput {
+  name: String!
+}
+type CategoryMutationResponse {
+  category: Category
+  message: String!
+  errors: [String!]
+}

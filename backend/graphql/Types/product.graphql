@@ -3,11 +3,13 @@ type Product {
   name: String!
   description: String!
   category_id: ID!
+  image_url: String
 }
 input CreateProductInput {
   name: String!
   description: String!
   category_id: ID!
+  image_url: String
 }
 type ProductMutationResponse {
   product: Product

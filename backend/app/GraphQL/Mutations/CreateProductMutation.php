@@ -15,6 +15,7 @@ class CreateProductMutation
             'name' => $args['name'],
             'description' => $args['description'],
             'category_id' => $args['category_id'],
+            'image_url' => $args['image_url'],
         ]);
 
         return [
