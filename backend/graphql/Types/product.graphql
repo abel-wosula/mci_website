@@ -11,6 +11,16 @@ input CreateProductInput {
   category_id: ID!
   image_url: String
 }
+input UpdateProductInput {
+  id: ID!
+  name: String
+  description: String
+  category_id: ID
+  image_url: String
+}
+input DeleteProductInput {
+  id: ID!
+}
 type ProductMutationResponse {
   product: Product
   message: String!

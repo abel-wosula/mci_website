@@ -1,4 +1,10 @@
 extend type Mutation {
   createProduct(input: CreateProductInput! @spread): ProductMutationResponse!
    @field(resolver: "App\\GraphQL\\Mutations\\CreateProductMutation@createProduct")
+
+  updateProduct(input: UpdateProductInput! @spread): ProductMutationResponse!
+   @field(resolver: "App\\GraphQL\\Mutations\\UpdateProductMutation@updateProduct")
+   
+  deleteProduct(input: DeleteProductInput! @spread): ProductMutationResponse!
+   @field(resolver: "App\\GraphQL\\Mutations\\DeleteProductMutation@deleteProduct")
 }
