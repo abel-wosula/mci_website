@@ -5,6 +5,13 @@ type Category {
 input CreateCategoryInput {
   name: String!
 }
+input UpdateCategoryInput {
+  id: ID!
+  name: String
+}
+input DeleteCategoryInput {
+  id: ID!
+}
 type CategoryMutationResponse {
   category: Category
   message: String!

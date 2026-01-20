@@ -1,6 +1,7 @@
 <?php
 
 namespace App\GraphQL\Mutations;
+
 use App\Models\Product;
 class UpdateProductMutation
 {

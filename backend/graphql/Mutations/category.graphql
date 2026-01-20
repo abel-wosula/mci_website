@@ -1,4 +1,10 @@
 extend type Mutation {
   createCategory(input: CreateCategoryInput! @spread): CategoryMutationResponse!
    @field(resolver: "App\\GraphQL\\Mutations\\CreateCategoryMutation@createCategory")
+
+  updateCategory(input: UpdateCategoryInput! @spread): CategoryMutationResponse!
+   @field(resolver: "App\\GraphQL\\Mutations\\UpdateCategoryMutation@updateCategory")
+   
+  deleteCategory(input: DeleteCategoryInput! @spread): CategoryMutationResponse!
+   @field(resolver: "App\\GraphQL\\Mutations\\DeleteCategoryMutation@deleteCategory")
 }

@@ -46,6 +46,7 @@ import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
 import UsersPage from "views/UsersPage";
 import ProductsPage from "views/ProductsPage";
+import CategoriesPage from "views/CategoriesPage";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -122,6 +123,14 @@ const routes = [
     icon: <Icon fontSize="small">inventory</Icon>,
     route: "/products",
     component: <ProductsPage />,
+  },
+  {
+    type: "collapse",
+    name: "Categories",
+    key: "categories",
+    icon: <Icon fontSize="small">category</Icon>,
+    route: "/categories",
+    component: <CategoriesPage />
   },
 ];
 
