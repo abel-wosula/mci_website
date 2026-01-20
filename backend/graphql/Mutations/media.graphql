@@ -1,4 +1,10 @@
 extend type Mutation {
   createMedia(input: CreateMediaInput! @spread): MediaMutationResponse!
    @field(resolver: "App\\GraphQL\\Mutations\\CreateMediaMutation@createMedia")
+
+  updateMedia(input: UpdateMediaInput! @spread): MediaMutationResponse!
+   @field(resolver: "App\\GraphQL\\Mutations\\UpdateMediaMutation@updateMedia")
+
+  deleteMedia(input: DeleteMediaInput! @spread): MediaMutationResponse!
+   @field(resolver: "App\\GraphQL\\Mutations\\DeleteMediaMutation@deleteMedia")
 }

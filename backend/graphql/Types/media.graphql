@@ -1,13 +1,24 @@
 type Media {
     id: ID!
-  url: String!
   name: String!
+  url: String!
+  category_id: ID
   createdAt: String!
   updatedAt: String!
 }
 input CreateMediaInput {
   url: String!
   name: String!
+  category_id: ID
+}
+input UpdateMediaInput {
+  id: ID!
+  url: String
+  name: String
+  category_id: ID
+}
+input DeleteMediaInput {
+  id: ID!
 }
 type MediaMutationResponse {
   media: Media

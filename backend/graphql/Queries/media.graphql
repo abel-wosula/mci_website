@@ -1,3 +1,3 @@
 extend type Query {
-  media: [Media!]! @paginate(defaultCount: 10)
+  medias: [Media!]! @paginate(defaultCount: 10)
 }

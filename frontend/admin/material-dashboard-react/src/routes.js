@@ -43,10 +43,11 @@ import RTL from "layouts/rtl";
 import Notifications from "layouts/notifications";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
-import SignUp from "layouts/authentication/sign-up";
+import SignUp from "layouts/authentication/sign-up";  
 import UsersPage from "views/UsersPage";
 import ProductsPage from "views/ProductsPage";
 import CategoriesPage from "views/CategoriesPage";
+import MediaPage from "views/MediaPage";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -131,6 +132,14 @@ const routes = [
     icon: <Icon fontSize="small">category</Icon>,
     route: "/categories",
     component: <CategoriesPage />
+  },
+  {
+    type: "collapse",
+    name: "medias",
+    key: "medias",
+    icon: <Icon fontSize="small">image</Icon>,
+    route: "/media",
+    component: <MediaPage />
   },
 ];
 

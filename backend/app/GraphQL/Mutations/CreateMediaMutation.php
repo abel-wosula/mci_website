@@ -14,6 +14,7 @@ class CreateMediaMutation
         $Media = Media::create([
             'url' => $args['url'],
             'name' => $args['name'],
+            'category_id' => $args['category_id']
         ]);
 
         return [

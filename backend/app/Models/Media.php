@@ -14,5 +14,6 @@ class Media extends Model
     protected $fillable = [
         'name',
         'url',
+        'category_id'
     ];
 }
