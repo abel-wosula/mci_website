@@ -37,6 +37,16 @@ const MediaPage = () => {
   } = useQuery(CATEGORIES_QUERY);
 
   const categories = catData?.categories?.data || [];
+  console.log("Categories:", categories);
+
+  const categoryMap = React.useMemo(() => {
+  const map = {};
+  categories.forEach(cat => {
+    map[cat.id] = cat.name;
+  });
+  return map;
+}, [categories]);
+  console.log("Category Map:", categoryMap);
 
   // Mutations
   const [createMedia] = useMutation(CREATE_MEDIA_MUTATION);

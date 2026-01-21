@@ -1,4 +1,10 @@
 extend type Mutation {
   createPage(input: CreatePageInput! @spread): PageMutationResponse!
    @field(resolver: "App\\GraphQL\\Mutations\\CreatePageMutation@createPage")
+
+  updatePage(input: UpdatePageInput! @spread): PageMutationResponse!
+   @field(resolver: "App\\GraphQL\\Mutations\\UpdatePageMutation@updatePage")
+
+  deletePage(input: DeletePageInput! @spread): PageMutationResponse!
+   @field(resolver: "App\\GraphQL\\Mutations\\DeletePageMutation@deletePage")
 }

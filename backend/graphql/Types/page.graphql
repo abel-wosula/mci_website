@@ -13,6 +13,17 @@ input CreatePageInput {
   is_published: Boolean!
   status_id: ID!
 }
+input UpdatePageInput {
+  id: ID!
+  title: String
+  content: String
+  slug: String
+  is_published: Boolean
+  status_id: ID
+}
+input DeletePageInput {
+  id: ID!
+}
 type PageMutationResponse {
   page: Page
   message: String!
