@@ -48,6 +48,7 @@ import UsersPage from "views/UsersPage";
 import ProductsPage from "views/ProductsPage";
 import CategoriesPage from "views/CategoriesPage";
 import MediaPage from "views/MediaPage";
+import ContactPage from "views/ContactPage";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -141,6 +142,14 @@ const routes = [
     route: "/media",
     component: <MediaPage />
   },
+  {
+    type: "collapse",
+    name: "contacts",
+    key: "contacts",
+    icon: <Icon fontSize="small">contacts</Icon>,
+    route: "/contacts",
+    component: <ContactPage />
+  }
 ];
 
 

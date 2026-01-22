@@ -1,4 +1,10 @@
 extend type Mutation {
   createContact(input: CreateContactInput! @spread): ContactMutationResponse!
    @field(resolver: "App\\GraphQL\\Mutations\\CreateContactMutation@createContact")
+
+  updateContact(input: UpdateContactInput! @spread): ContactMutationResponse!
+    @field(resolver: "App\\GraphQL\\Mutations\\UpdateContactMutation@updateContact")
+
+  deleteContact(input: DeleteContactInput! @spread): ContactMutationResponse!
+    @field(resolver: "App\\GraphQL\\Mutations\\DeleteContactMutation@deleteContact")
 }

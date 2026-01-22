@@ -11,6 +11,15 @@ input CreateContactInput {
   email: String!
   message: String!
 }
+input UpdateContactInput {
+  id: ID!
+  name: String
+  email: String
+  message: String
+}
+input DeleteContactInput {
+  id: ID!
+}
 type ContactMutationResponse {
   contact: Contact
   message: String!
