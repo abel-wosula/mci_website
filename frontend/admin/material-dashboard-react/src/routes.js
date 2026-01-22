@@ -49,6 +49,7 @@ import ProductsPage from "views/ProductsPage";
 import CategoriesPage from "views/CategoriesPage";
 import MediaPage from "views/MediaPage";
 import ContactPage from "views/ContactPage";
+import PagesPage from "views/PagesPage";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -149,6 +150,14 @@ const routes = [
     icon: <Icon fontSize="small">contacts</Icon>,
     route: "/contacts",
     component: <ContactPage />
+  },
+  {
+    type: "collapse",
+    name: "Pages",
+    key: "pages",
+    icon: <Icon fontSize="small">description</Icon>,
+    route: "/pages",
+    component: <PagesPage />
   }
 ];
 
