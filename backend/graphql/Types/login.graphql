@@ -1,0 +1,6 @@
+type AuthPayload {
+  token: String!
+  user: User!
+  message: String!
+  errors: [String!]
+}

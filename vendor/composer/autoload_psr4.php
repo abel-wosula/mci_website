@@ -44,6 +44,7 @@ return array(
     'Psr\\Clock\\' => array($vendorDir . '/psr/clock/src'),
     'Nuwave\\Lighthouse\\' => array($vendorDir . '/nuwave/lighthouse/src'),
     'Laravel\\SerializableClosure\\' => array($vendorDir . '/laravel/serializable-closure/src'),
+    'Laravel\\Sanctum\\' => array($vendorDir . '/laravel/sanctum/src'),
     'Laravel\\Prompts\\' => array($vendorDir . '/laravel/prompts/src'),
     'Laragraph\\Utils\\' => array($vendorDir . '/laragraph/utils/src'),
     'Illuminate\\View\\' => array($vendorDir . '/illuminate/view'),

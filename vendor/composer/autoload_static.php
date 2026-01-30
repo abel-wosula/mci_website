@@ -174,6 +174,7 @@ class ComposerStaticInitebdf00b287953d92dd975cb12c77b34d
         'L' =>
         array (
             'Laravel\\SerializableClosure\\' => 28,
+            'Laravel\\Sanctum\\' => 16,
             'Laravel\\Prompts\\' => 16,
             'Laragraph\\Utils\\' => 16,
         ),
@@ -388,6 +389,10 @@ class ComposerStaticInitebdf00b287953d92dd975cb12c77b34d
         'Laravel\\SerializableClosure\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/serializable-closure/src',
+        ),
+        'Laravel\\Sanctum\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/laravel/sanctum/src',
         ),
         'Laravel\\Prompts\\' =>
         array (
