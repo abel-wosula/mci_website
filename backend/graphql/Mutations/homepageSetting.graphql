@@ -1,0 +1,10 @@
+extend type Mutation {
+  createHomepageSetting(input: CreateHomepageSettingInput! @spread): HomepageSettingMutationResponse!
+   @field(resolver: "App\\GraphQL\\Mutations\\CreateHomepageSettingMutation@createHomepageSetting")
+
+  updateHomepageSetting(input: UpdateHomepageSettingInput! @spread): HomepageSettingMutationResponse!
+   @field(resolver: "App\\GraphQL\\Mutations\\UpdateHomepageSettingMutation@updateHomepageSetting")
+
+  deleteHomepageSetting(input: DeleteHomepageSettingInput! @spread): HomepageSettingMutationResponse!
+   @field(resolver: "App\\GraphQL\\Mutations\\DeleteHomepageSettingMutation@deleteHomepageSetting")
+}

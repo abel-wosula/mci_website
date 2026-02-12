@@ -1,0 +1,3 @@
+extend type Query {
+  homepage_settings: [HomepageSetting!]! @paginate(defaultCount: 10)
+}

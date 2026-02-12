@@ -1,0 +1,34 @@
+type HomepageSetting {
+    id: ID!
+    hero_section: String
+    featured_products: String
+    banner_section: String
+    categories: String
+    meta_data: String
+    updated_by: String
+    created_at: String
+    updated_at: String
+}
+input CreateHomepageSettingInput {
+    hero_section: String
+    featured_products: String
+    banner_section: String
+    categories:String
+    meta_data: String
+}
+input UpdateHomepageSettingInput {
+    id: ID!
+    hero_section: String
+    featured_products: String
+    banner_section: String
+    categories: String
+    meta_data: String
+}
+input DeleteHomepageSettingInput {
+    id: ID!
+}
+type HomepageSettingMutationResponse {
+    homepage_setting: HomepageSetting
+    message: String!
+    errors: [String!]
+}

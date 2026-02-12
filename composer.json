@@ -1,6 +1,7 @@
 {
     "require": {
         "nuwave/lighthouse": "^6.64",
-        "laravel/sanctum": "^4.3"
+        "laravel/sanctum": "^4.3",
+        "filament/filament": "^5.2"
     }
 }
