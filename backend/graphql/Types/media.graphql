@@ -1,20 +1,35 @@
 type Media {
     id: ID!
   name: String!
-  url: String!
+  file_path: String!
+  file_name: String!
+  media_type: String!
+  alt_text: String
+  title: String
+  description: String
   category_id: ID
   createdAt: String!
   updatedAt: String!
 }
 input CreateMediaInput {
-  url: String!
   name: String!
+  file_path: String!
+  file_name: String!
+  media_type: String!
+  alt_text: String
+  title: String
+  description: String
   category_id: ID
 }
 input UpdateMediaInput {
   id: ID!
-  url: String
   name: String
+  file_path: String
+  file_name: String
+  media_type: String
+  alt_text: String
+  title: String
+  description: String
   category_id: ID
 }
 input DeleteMediaInput {

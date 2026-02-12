@@ -13,7 +13,12 @@ class Media extends Model
 
     protected $fillable = [
         'name',
-        'url',
+        'file_path',
+        'file_name',
+        'media_type',
+        'alt_text',
+        'title',
+        'description',
         'category_id'
     ];
 }
